@@ -8,7 +8,7 @@ import { internalsSymbol } from '../utils';
 export interface Node<T = any> {
   id: string;
   position: XYPosition;
-  data: T;
+  data?: T;
   type?: string;
   style?: CSSProperties;
   className?: string;
